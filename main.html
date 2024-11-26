@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M Mart - Online Shopping</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            background-image: url("/Backgroundimg.jpeg");
+            background-repeat: no-repeat;
+            background-size: 1600px 1100px;
+        }
+        .navbar {
+            display: flex;
+            gap: 30px;
+            padding: 20px;
+            background-color: rgb(48, 49, 48);
+            color: white;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        .navbar a:hover {
+            background-color: blue;
+            color: black;
+            padding: 10px;
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+            display: none; /* default hidden for toggling */
+        }
+        section:target {
+            display: block; /* show section when targeted */
+        }
+        .home-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .home-links a {
+            padding: 10px 15px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            text-align: center;
+            display: inline-block;
+        }
+        .home-links a:hover {
+            background-color: #45a049;
+            transform: scale(1.05);
+        }
+        .product {
+            display: inline-block;
+            width: 200px;
+            padding: 15px;
+            margin: 10px;
+            text-align: center;
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .product img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        button {
+            padding: 8px 12px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        #about input[type="text"], #about input[type="number"] {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        fieldset {
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">       
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+    </div>
+
+    <section id="home">
+        <h2>Welcome to M Mart</h2>
+        <div class="home-links">
+            <a href="#Household Items">Household Items</a>
+            <a href="#Kitchen Items">Kitchen Items</a>
+            <a href="#Cosmetics Items">Cosmetics</a>
+            <a href="#Packed Items">Packed Foods and Beverages</a>
+
+        </div>
+    </section>
+
+    <section id="Household Items">
+        
+        <h2>Household Items</h2>
+            <div class="product">
+                <img src="https://www.turnblack.in/wp-content/uploads/2022/12/cotton.2-copy-750x1125.jpg" alt="Curtains">
+                <h3>Curtains</h3>
+                <p>Price: $5.00</p>
+                <button>Buy</button>
+            </div>
+            <div class="product">
+                <img src="https://tse3.mm.bing.net/th?id=OIP.wWsbrVW6JvifsoSy8Kdp9gHaHa&pid=Api&P=0&h=180" alt="Pillow">
+                <h3>Pillow</h3>
+                <p>Price: $15.00</p><br>
+                <button>buy</button>
+            </div>
+            <div class="product">
+                <img src="https://media-us.landmarkshops.in/cdn-cgi/image/h=750,w=750,q=85,fit=cover/homecentre/1000012567800-1000012567799_01-2100.jpg" alt="Tables">
+                <h3>Tables</h3>
+                <p>Price: $5.00</p>
+                <button>Buy</button>
+            </div>
+            <div class="product">
+                <img src="https://tse4.mm.bing.net/th?id=OIP.aiSH2eskuLwSG5wL6wLO3QHaIa&pid=Api&P=0&h=180" alt="Bucket">
+                <h3>Bucket</h3>
+                <p>Price: $10.00</p>
+                <button>Buy</button>
+            </div>
+            <div class="product">
+                <img src="https://tse4.mm.bing.net/th?id=OIP.QQQ8qMlOX9OuuAxd7vYlQQHaJQ&pid=Api&P=0&h=180" alt="Broom">
+                <h3>Broom</h3>
+                <p>Price: $8.00</p>
+                <button>Buy</button>
+            </div>
+            <div class="product">
+                <img src="https://m.media-amazon.com/images/I/51MnRAijFDL._SY300_SX300_QL70_FMwebp_.jpg" alt="Chair">
+                <h3>Chairs</h3>
+                <p>Price: $5.00</p>
+                <button>Buy</button>
+            </div>
+            <div class="product">
+                <img src="https://dutchgoat.s3.amazonaws.com/as2/2021/6/medium/Bao0Ng-9f7pPT4K9_vS0kA66.jpeg" alt="Bulbs">
+                <h3>Bulbs</h3>
+                <p>Price: $5.00</p>
+                <button>Buy</button>
+            </div>
+            <div class="product">
+                <img src="https://tse2.mm.bing.net/th?id=OIP.WFIbx1mO6XVFjpgPR0r66QHaGL&pid=Api&P=0&h=180" alt="Cutlery">
+                <h3>Cutlery Set</h3>
+                <p>Price: $25.00</p>
+                <button>Buy</button>
+            </div>
+            <div class="product">
+                <img src="https://tse4.mm.bing.net/th?id=OIP.6j-ZV233s414yjEAoA6fPQAAAA&pid=Api&P=0&h=180" alt="Carpet">
+                <h3>Carpet</h3>
+                <p>Price: $50.00</p>
+                <button>Buy</button>
+            </div>
+            <div class="product">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.I-mUHcrioVt6SjanshtoxAHaFs&pid=Api&P=0&h=180" alt="Hanger">
+                <h3>Hanger</h3>
+                <p>Price: $3.00</p>
+                <button>Buy</button>
+            </div>
+        </section>
+        <section id="Kitchen Items">
+            <h2>Kitchen Items</h2>
+            <div class="product">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.mcJVbCsSWkhqg-WYJXtKEwHaGm&pid=Api&P=0&h=180" alt="Container">
+                <h3>Container</h3>
+                <p>Price: $5.00</p>
+                <button>Buy</button>
+            </div>
+            <div class="product">
+                <img src="https://5.imimg.com/data5/SELLER/Default/2023/4/300980029/XM/HQ/ZS/8429216/1-1--1000x1000.jpg" alt="mixer">
+                
+                <h3>Mixer</h3>
+                <p>Price: $50.00</p>
+                <button>Buy</button>
+            </div>
+            <div class="product">
+                <img src="https://blueberrysindia.com/wp-content/uploads/2021/08/GLANZA-3B-copy.jpg.webp" alt="Oil">
+                <h3>Gas stove</h3>
+                <p>Price: $50.00</p>
+                <button>Buy</button>
+            </div>
+            <div class="product">
+                <img src="https://images.samsung.com/is/image/samsung/p6pim/in/mc28a5025vs-tl/gallery/in-mc28a5025-convection-microwave--28-l-mc28a5025vs-tl-532583092?$1300_1038_PNG$" alt="Oil">
+                <h3>Microwave</h3>
+                <p>Price: $4.00</p>
+                <button>Buy</button>
+            </div>
+            <div class="product">
+                <img src=https://m.media-amazon.com/images/I/31lmRurSPyL._SX300_SY300_QL70_FMwebp_.jpg alt="Oil">
+                <h3>Pressure cooker</h3>
+                <p>Price: $4.00</p>
+                <button>Buy</button>
+            </div>
+            <div class="product">
+                    <img src="https://m.media-amazon.com/images/I/61LWC7VQ2wL._SX679_.jpg" alt="Oil">
+                    <h3>Bowls</h3>
+                    <p>Price: $4.00</p>
+                    <button>Buy</button>
+            </div>
+            <div class="product">
+                <img src=https://m.media-amazon.com/images/I/31lmRurSPyL._SX300_SY300_QL70_FMwebp_.jpg alt="Oil">
+                <h3>Pressure cooker</h3>
+                <p>Price: $4.00</p>
+                <button>Buy</button>
+            </div>
+            <div class="product">
+                <img src="https://m.media-amazon.com/images/I/81v0JalGeAL._AC_SL1500_.jpg" alt="Cups" height="200" width="200">
+                <h3>Cups</h3>
+                <p>Price: $10.00</p>
+                <button>Buy</button>
+            </div>
+            <div class="product">
+                <img src="https://tse4.mm.bing.net/th?id=OIP.tH6mAyTjLQ6aUYdKBH53vwHaG0&pid=Api&P=0&h=180" alt="Pans">
+                <h3>Frying Pan</h3>
+                <p>Price: $20.00</p>
+                <button>Buy</button>
+            </div>
+            <div class="product">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.hnGGzbRlq6dH420AVfcTAgHaFj&pid=Api&P=0&h=180" alt="Chopping Board">
+                <h3>Chopping Board</h3>
+                <p>Price: $15.00</p>
+                <button>Buy</button>
+            </div>
+        </section>
+        <section id="Cosmetics Items">
+            <h2>Cosmetics</h2>
+            <div class="product">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgGPIU0EvSayYvffMxO6bmPk3erGwmKXhZSA&s" alt="Mirror">
+                <h3>Mirror</h3>
+                <p>Price: $10.00</p>
+                <button>Buy</button>
+            </div>
+            <div class="product">
+                <img src="https://images-static.nykaa.com/media/catalog/product/2/b/2be92c2RENEE00000525_001.jpg" alt="Brushs">
+                <h3>Brushs</h3>
+                <p>Price: $10.00</p>
+                <button>Buy</button>
+            </div>
+            <div class="product">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOnCliKVbg71kJ9NjM52FamTnek641a5O4Xg&s" alt="Hand creams">
+                <h3>Hand creams</h3>
+                <p>Price: $10.00</p>
+                <button>Buy</button>
+            </div>
+            <div class="product">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLGJ7Tz4iye_U0T0pt88hus5z7aF__w-QQyQ&s" alt="eyeshadow">
+                <h3>eyeshadow</h3>
+                <p>Price: $10.00</p>
+                <button>Buy</button>
+            </div>
+            <div class="product">
+                <img src="https://m.media-amazon.com/images/I/71U7oHRVOrL.jpg" alt="lip pencils">
+                <h3>lip pencils</h3>
+                <p>Price: $10.00</p>
+                <button>Buy</button>
+            </div>
+            <div class="product">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgfw49D-_1wKMp4mIpqmZNf5uMhkVBorre1y7Yhk7b8PZ8QqaTmuFeIx97GfonI3tMjsA&usqp=CAU" alt="nail polish">
+                <h3>nail polish</h3>
+                <p>Price: $10.00</p>
+                <button>Buy</button>
+            </div>
+            <div class="product">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYo87ohmars6nlOS_IQFwWxNPwu2e1gb260qgm8S4xwrbj1JolPQnr4Ov4tMsZCK-btd4&usqp=CAU" alt="face powerd">
+                <h3>face powerd</h3>
+                <p>Price: $10.00</p>
+                <button>Buy</button>
+            </div>
+            <div class="product">
+                <img src="https://tse3.mm.bing.net/th?id=OIP.RDnwaumeVheUsXaoqY5K_AFNC7&pid=Api&P=0&h=180" alt="Cream">
+                <h3>Skin Cream</h3>
+                <p>Price: $15.00</p>
+                <button>Buy</button>
+            </div>
+            <div class="product">
+                <img src="https://tse4.mm.bing.net/th?id=OIP.CaDYO5azGRM4JkIts58UqgHaHE&pid=Api&P=0&h=180" alt="Lipstick">
+                <h3>Lipstick</h3>
+                <p>Price: $8.00</p>
+                <button>Buy</button>
+            </div>
+            <div class="product">
+                <img src="https://tse2.mm.bing.net/th?id=OIP.q6ArIVB8EmdyVv2HphwP_gAAAA&pid=Api&P=0&h=180" alt="Lotion" width="200" height="100">
+                <h3>Body Lotion</h3>
+                <p>Price: $12.00</p>
+                <button>Buy</button>
+            </div>
+        </section>
+        <section id="Packed Items">
+            <h2>Packed Food Items</h2>
+            <div class="product">
+                <img src="https://tse4.mm.bing.net/th?id=OIP.6r4QOxArUdrb3HXsCSdRGAHaFj&pid=Api&P=0&h=180" alt="Soup">
+                <h3>Soup</h3>
+                <p>Price: $5.00</p>
+                <button>Buy</button>
+            </div>
+            <div class="product">
+                <img src="https://images-na.ssl-images-amazon.com/images/I/71g6mfYtMRL._SL1500_.jpg" alt="Pasta" height="200" width="200">
+                <h3>Pasta</h3>
+                <p>Price: $2.50</p>
+                <button>Buy</button>
+            </div>
+            <div class="product">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.k6inLrKI7np1P94vUxfSUAHaFj&pid=Api&P=0&h=180" alt="Noodles">
+                <h3>Noodles</h3>
+                <p>Price: $1.50</p>
+                <button>Buy</button>
+            </div>
+            <div class="product">
+                <img src="https://tse4.mm.bing.net/th?id=OIP.lSaNkvjMyTgHd2h0H8yc_QHaF2&pid=Api&P=0&h=180" alt="Bread">
+                <h3>Bread</h3>
+                <p>Price: $3.00</p>
+                <button>Buy</button>
+            </div>
+            <div class="product">
+                <img src="https://t3.ftcdn.net/jpg/07/57/06/54/360_F_757065470_g7zUwZVbbuR5soUcSZYWA0HrRvN4Me2N.jpg" alt="Lays">
+                <h3>Lays</h3>
+                <p>Price: $2.00</p>
+                <button>Buy</button>
+            </div>
+            <div class="product">
+                    <img src="https://tse1.mm.bing.net/th?id=OIP.Z6085i0bO6raBMdXUmwAOgHaE9&pid=Api&P=0&h=180" alt="Eggs">
+                    <h3>Eggs</h3>
+                    <p>Price: $3.00</p>     
+                    <button>Buy</button>
+            </div>
+            <div class="product">
+                <img src="https://c8.alamy.com/comp/J0KXC2/bottled-soft-soda-drinks-aisle-in-a-supermarket-J0KXC2.jpg"alt="Drinks">
+                <h3>Drinks</h3>
+                <p>Price: $3.00</p>     
+                <button>Buy</button>
+            </div>
+            <div class="product">
+                <img src="https://img.lazcdn.com/g/p/3d7e92333dff48af8bdba2c3be6b9b96.png_720x720q80.png_.webp" alt="Eggs">
+                <h3>Chocolates</h3>
+                <p>Price: $3.00</p>     
+                <button>Buy</button>
+            </div>
+            <div class="product">
+                <img src="https://actionpoint.co.uk/wp-content/uploads/2018/05/Cornetto-Boxes.jpg" alt="Eggs">
+                <h3>Ice creams</h3>
+                <p>Price: $3.00</p>     
+                <button>Buy</button>
+            </div>
+            <div class="product">
+                <img src="https://m.media-amazon.com/images/I/81d7cB6tZsL.jpg" alt="Eggs">
+                <h3>Butters</h3>
+                <p>Price: $3.00</p>     
+                <button>Buy</button>
+            </div>
+        
+        <!-- Repeat similar structure for other products here -->
+    </section>
+
+    <section id = "about">
+        <label>Name:-</label><br>
+        <input type="text" placeholder="Enter your name"><br>
+        <label>Email id:-</label><br>
+        <input type="text" placeholder="Enter your Email"><br>
+        <label>phone no:-</label><br>
+        <input type="text" placeholder="Enter your number"><br>
+        
+        <fieldset>
+            <legend>Address Info</legend>
+            <label>Enter House no:- </label><br>
+            <input type="text"><br>
+            <label>Enter Street:- </label><br>
+            <input type="text"><br>
+            <label>Enter state:-</label><br>
+            <input type="text"><br>
+            <label>  Enter city:- </label><br>
+            <input type="text"><br>
+            <label>Enter Pincode:- </label><br>
+            <input type="number"><br>
+        </fieldset><br>
+
+       <center><button>Submit</button></center> 
+    </section>
+
+</body>
+</html>
